@@ -12,6 +12,7 @@ namespace E_commarce
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
 
         protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
