@@ -28,18 +28,8 @@ namespace E_commarce
             //ddlCategory.DataBind();
             Page.DataBind();
         }
-        protected void btnOrder_Click(object sender, EventArgs e)
-        {
-            string data = "Selected products ";
-            foreach (ListItem item in CheckBoxList1.Items)
-            {
-                if (item.Selected)
-                {
-                    data += item.Text + "  ";
-                }
-            }
-            lblmsg.Text = data;
-        }
+        
+        
 
         protected void ddlCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -74,6 +64,8 @@ namespace E_commarce
         {
             int counter = 0;
             string data = "Selected products ";
+            HttpCookie cookie = new HttpCookie("productlist");
+            string str = "prod";
             foreach (ListItem item in CheckBoxList1.Items)
             {
                 if (item.Selected)
@@ -81,11 +73,14 @@ namespace E_commarce
                     counter++;
                     ViewState["pcount"] = counter;
                     data += item.Text + "  ";
+                    str = str + counter.ToString();
+                    cookie.Values.Add(str, item.Text);
                 }
             }
-            lblmsg.Text = data;
-            lblproduct.Text = "Total no of product" + ViewState["pcount"];
+            Response.Cookies.Add(cookie);
+            Response.Redirect("~/ViewCart.aspx");
 
+            lblmsg.Text = data;
         }
-    }   
+    }
 }
