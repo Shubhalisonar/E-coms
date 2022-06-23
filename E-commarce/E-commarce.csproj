@@ -72,6 +72,7 @@
     <Content Include="Multiviewdemo.aspx" />
     <Content Include="NewFolder1\logo.png" />
     <Content Include="NewFolder1\Mobile-Phone-PNG-HD.png" />
+    <Content Include="ReadQueryString.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -100,6 +101,13 @@
       <DependentUpon>Multiviewdemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadQueryString.aspx.cs">
+      <DependentUpon>ReadQueryString.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReadQueryString.aspx.designer.cs">
+      <DependentUpon>ReadQueryString.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

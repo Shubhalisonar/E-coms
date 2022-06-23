@@ -33,13 +33,13 @@
         <table class="auto-style1">
             <tr>
                 <td rowspan="5">
-                    <asp:HyperLink ID="HyperLink1" runat="server">Mobile</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ReadQueryString.aspx?category=Mobile">Mobile</asp:HyperLink>
                     <br />
-                    <asp:HyperLink ID="HyperLink2" runat="server">Camera</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ReadQueryString.aspx?category=Camera">Camera</asp:HyperLink>
                     <br />
-                    <asp:HyperLink ID="HyperLink3" runat="server">Laptop</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ReadQueryString.aspx?category=Laptop">Laptop</asp:HyperLink>
                     <br />
-                    <asp:HyperLink ID="HyperLink4" runat="server">Smart watch</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ReadQueryString.aspx?category=SmartWatch">Smart watch</asp:HyperLink>
                 </td>
                 <td class="auto-style2">
                     <asp:Image ID="Image2" runat="server" Height="384px" ImageUrl="~/NewFolder1/Mobile-Phone-PNG-HD.png" />

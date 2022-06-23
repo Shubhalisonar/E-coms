@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button2" runat="server" Text="Button" />
+                    <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
                 </td>
                 <td>
                     <asp:BulletedList ID="BulletedList1" runat="server">
@@ -64,7 +64,9 @@
                 <td>
                     <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="lblproduct" runat="server"></asp:Label>
+                </td>
             </tr>
         </table>
     </form>

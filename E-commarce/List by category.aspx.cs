@@ -59,7 +59,7 @@ namespace E_commarce
             {
                 CheckBoxList1.DataSource = laptop;
             }
-            else if (category == "Smart Watch")
+            else if (category == "SmartWatch")
             {
                 CheckBoxList1.DataSource = smartwatch;
             }
@@ -70,6 +70,22 @@ namespace E_commarce
 
         }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            int counter = 0;
+            string data = "Selected products ";
+            foreach (ListItem item in CheckBoxList1.Items)
+            {
+                if (item.Selected)
+                {
+                    counter++;
+                    ViewState["pcount"] = counter;
+                    data += item.Text + "  ";
+                }
+            }
+            lblmsg.Text = data;
+            lblproduct.Text = "Total no of product" + ViewState["pcount"];
 
+        }
     }   
 }
