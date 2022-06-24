@@ -63,9 +63,12 @@
             <tr>
                 <td>
                     <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label>
+                    <br />
                 </td>
                 <td>
                     <asp:Label ID="lblproduct" runat="server"></asp:Label>
+                    <br />
+                    <br />
                 </td>
             </tr>
         </table>

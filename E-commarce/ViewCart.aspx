@@ -52,11 +52,15 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Delete" />
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label2" runat="server" ForeColor="Red" Text="lblMsg"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>

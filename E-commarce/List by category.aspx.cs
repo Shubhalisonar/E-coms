@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -28,8 +29,8 @@ namespace E_commarce
             //ddlCategory.DataBind();
             Page.DataBind();
         }
-        
-        
+
+
 
         protected void ddlCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -62,25 +63,36 @@ namespace E_commarce
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            int counter = 0;
-            string data = "Selected products ";
-            HttpCookie cookie = new HttpCookie("productlist");
-            string str = "prod";
+            //    int counter = 0;
+            //    string data = "Selected products ";
+            //    HttpCookie cookie = new HttpCookie("productlist");
+            //    string str = "prod";
+            //    foreach (ListItem item in CheckBoxList1.Items)
+            //    {
+            //        if (item.Selected)
+            //        {
+            //            counter++;
+            //            ViewState["pcount"] = counter;
+            //            data += item.Text + "  ";
+            //            str = str + counter.ToString();
+            //            cookie.Values.Add(str, item.Text);
+            //        }
+            //    }
+            //    Response.Cookies.Add(cookie);
+            //    Response.Redirect("~/ViewCart.aspx");
+
+            //    lblmsg.Text = data;
+            //}
+            ArrayList list = new ArrayList();
             foreach (ListItem item in CheckBoxList1.Items)
             {
-                if (item.Selected)
+                if (!item.Selected)
                 {
-                    counter++;
-                    ViewState["pcount"] = counter;
-                    data += item.Text + "  ";
-                    str = str + counter.ToString();
-                    cookie.Values.Add(str, item.Text);
+                    list.Add(item.Text);
                 }
+                Session["plist"] = list;
+                Response.Redirect("~/ViewCart.aspx");
             }
-            Response.Cookies.Add(cookie);
-            Response.Redirect("~/ViewCart.aspx");
-
-            lblmsg.Text = data;
         }
     }
 }

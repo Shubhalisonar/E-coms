@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,14 +12,41 @@ namespace E_commarce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-                HttpCookie cookie = Request.Cookies["productlist"];
-                for (int i = 0; i < cookie.Values.Count; i++)
-                {
-                    CheckBoxList1.Items.Add(cookie.Values[i]);
-                }
-            
 
+            //HttpCookie cookie = Request.Cookies["productlist"];
+            //for (int i = 0; i < cookie.Values.Count; i++)
+            //{
+            //    CheckBoxList1.Items.Add(cookie.Values[i]);
+            //}
+            if (Session["plist"] != null)
+            {
+
+                ArrayList list = new ArrayList();
+                list = (ArrayList)Session["plist"];
+                CheckBoxList1.DataSource = list;
+                CheckBoxList1.DataBind();
+                lblMsg.Text = "";
+            }
+            else
+            {
+                lblMsg.Text = "No items in the cart";
+            }
+        }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            ArrayList list = new ArrayList();
+            foreach (ListItem item in CheckBoxList1.Items)
+            {
+                if (!item.Selected)
+                {
+                    list.Add(item.Text);
+                }
+            }
+            CheckBoxList1.Items.Clear();
+            CheckBoxList1.DataSource = list;
+            CheckBoxList1.DataBind();
 
         }
     }
