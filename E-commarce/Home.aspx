@@ -35,7 +35,9 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="lblvcount" runat="server" Text="lblvcount"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
