@@ -67,20 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Footer.ascx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="List by category.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Menu.ascx" />
     <Content Include="Multiviewdemo.aspx" />
     <Content Include="NewFolder1\logo.png" />
     <Content Include="NewFolder1\Mobile-Phone-PNG-HD.png" />
     <Content Include="ReadQueryString.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="Left.ascx" />
     <Content Include="ViewCart.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="WebUserControl1.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\CountedButton.cs" />
+    <Compile Include="CheckBoxList1.cs" />
+    <Compile Include="Comman.Master.cs">
+      <DependentUpon>Comman.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comman.Master.designer.cs">
+      <DependentUpon>Comman.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -97,6 +118,20 @@
     </Compile>
     <Compile Include="List by category.aspx.designer.cs">
       <DependentUpon>List by category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
     </Compile>
     <Compile Include="Multiviewdemo.aspx.cs">
       <DependentUpon>Multiviewdemo.aspx</DependentUpon>
@@ -120,6 +155,13 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Left.ascx.cs">
+      <DependentUpon>Left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Left.ascx.designer.cs">
+      <DependentUpon>Left.ascx</DependentUpon>
+    </Compile>
     <Compile Include="ViewCart.aspx.cs">
       <DependentUpon>ViewCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,8 +169,16 @@
     <Compile Include="ViewCart.aspx.designer.cs">
       <DependentUpon>ViewCart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Comman.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

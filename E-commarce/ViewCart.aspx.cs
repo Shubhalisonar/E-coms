@@ -23,8 +23,8 @@ namespace E_commarce
 
                 ArrayList list = new ArrayList();
                 list = (ArrayList)Session["plist"];
-                CheckBoxList1.DataSource = list;
-                CheckBoxList1.DataBind();
+                checkboxlistviewcart.DataSource = list;
+                checkboxlistviewcart.DataBind();
                 lblMsg.Text = "";
             }
             else
@@ -32,21 +32,20 @@ namespace E_commarce
                 lblMsg.Text = "No items in the cart";
             }
         }
-        }
-
+       
         protected void Button1_Click(object sender, EventArgs e)
         {
             ArrayList list = new ArrayList();
-            foreach (ListItem item in CheckBoxList1.Items)
+            foreach (ListItem item in checkboxlistviewcart.Items)
             {
                 if (!item.Selected)
                 {
                     list.Add(item.Text);
                 }
             }
-            CheckBoxList1.Items.Clear();
-            CheckBoxList1.DataSource = list;
-            CheckBoxList1.DataBind();
+            checkboxlistviewcart.Items.Clear();
+            checkboxlistviewcart.DataSource = list;
+            checkboxlistviewcart.DataBind();
 
         }
     }

@@ -16,7 +16,7 @@ namespace E_commarce
             count++;
             Application["vcount"] = count;
             Application.UnLock();
-            lblVisitCount.Text = "You are the Visitor number" + Application["vcount"].ToString();
+            lblvcount.Text = "You are the Visitor number" + Application["vcount"].ToString();
         }
     }
 }

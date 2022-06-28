@@ -46,20 +46,20 @@
             </tr>
             <tr>
                 <td>
-                    <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+                    <asp:CheckBoxList ID="checkboxlistviewcart" runat="server">
                     </asp:CheckBoxList>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Delete" />
+                    <asp:Button ID="deletebutton" runat="server" OnClick="Button1_Click" Text="Delete" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label2" runat="server" ForeColor="Red" Text="lblMsg"></asp:Label>
+                    <asp:Label ID="lblMsg" runat="server" ForeColor="Red" Text="lblMsg"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>

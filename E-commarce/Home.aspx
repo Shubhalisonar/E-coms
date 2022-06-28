@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="E_commarce.Home" %>
 
+<%@ Register TagPrefix="cc" Namespace="E_commarce.App_Code"  %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -66,6 +67,7 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+        <cc:CountedButton ID="cb1" runat="server" />
     </form>
 </body>
 </html>

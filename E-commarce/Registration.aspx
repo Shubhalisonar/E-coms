@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="E_commarce.Registration" %>
 
+<%@ Register src="Menu.ascx" tagname="Menu" tagprefix="uc1" %>
+<%@ Register src="Footer.ascx" tagname="Footer" tagprefix="uc2" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29,6 +32,11 @@
         </div>
         <div>
             <table class="auto-style1">
+                <tr>
+                    <td colspan="3">
+                        <uc1:Menu ID="Menu1" runat="server" />
+                    </td>
+                </tr>
                 <tr>
                     <td>User Sign Up</td>
                     <td class="auto-style3">&nbsp;</td>
@@ -112,6 +120,11 @@
                         <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
                     </td>
                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <uc2:Footer ID="Footer1" runat="server" />
+                    </td>
                 </tr>
             </table>
         </div>
