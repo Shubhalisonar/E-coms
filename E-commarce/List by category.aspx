@@ -1,13 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="List by category.aspx.cs" Inherits="E_commarce.List_by_category" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Comman.Master" AutoEventWireup="true" CodeBehind="List by category.aspx.cs" Inherits="E_commarce.List_by_category" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <asp:Image ID="Image1" runat="server" Height="84px" ImageUrl="~/NewFolder1/logo.png" Width="522px" />
             <br />
@@ -72,6 +67,4 @@
                 </td>
             </tr>
         </table>
-    </form>
-</body>
-</html>
+   </asp:Content>

@@ -1,12 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="E_commarce.Registration" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Comman.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="E_commarce.Registration" %>
 
 <%@ Register src="Menu.ascx" tagname="Menu" tagprefix="uc1" %>
 <%@ Register src="Footer.ascx" tagname="Footer" tagprefix="uc2" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title></title>
     <style type="text/css">
 
@@ -25,9 +22,10 @@
             width: 706px;
         }
     </style>
-</head>
-<body>
-    <form id="form2" runat="server">
+
+    </asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
         </div>
         <div>
@@ -129,7 +127,7 @@
             </table>
         </div>
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
-    </form>
+  
     <script type ="text/javascript">
         function check(sender, data) {
             if (isNaN(data.Value)) {
@@ -141,6 +139,4 @@
         }
 
     </script>
-   
-</body>
-</html>
+   </asp:Content>

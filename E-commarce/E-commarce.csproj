@@ -86,6 +86,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\CountedButton.cs" />
+    <Content Include="App_Code\Users.cs" />
+    <Content Include="App_Code\UserDeL.cs" />
     <Compile Include="CheckBoxList1.cs" />
     <Compile Include="Comman.Master.cs">
       <DependentUpon>Comman.Master</DependentUpon>

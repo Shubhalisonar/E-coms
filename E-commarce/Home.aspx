@@ -1,10 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="E_commarce.Home" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Comman.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="E_commarce.Home" %>
 
 <%@ Register TagPrefix="cc" Namespace="E_commarce.App_Code"  %>
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
     <title></title>
     <style type="text/css">
         .auto-style1 {
@@ -14,9 +12,8 @@
             height: 14px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+    </asp:Content>
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <asp:Image ID="Image1" runat="server" Height="84px" ImageUrl="~/NewFolder1/logo.png" Width="522px" />
             <br />
@@ -68,6 +65,4 @@
             </tr>
         </table>
         <cc:CountedButton ID="cb1" runat="server" />
-    </form>
-</body>
-</html>
+</asp:Content>
