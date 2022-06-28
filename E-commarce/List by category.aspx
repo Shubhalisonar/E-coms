@@ -8,26 +8,9 @@
             <br />
             <br />
             <strong>
-            <asp:HyperLink ID="hlhome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-&nbsp; |&nbsp;
-            <asp:HyperLink ID="hlvc" runat="server">View Cart</asp:HyperLink>
-&nbsp; |
-            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/List by category.aspx">List By Category</asp:HyperLink>
-&nbsp; |&nbsp;
-            <asp:HyperLink ID="hlRegister" runat="server" NavigateUrl="~/Registration.aspx">Registration</asp:HyperLink>
-            </strong>
-        </div>
+&nbsp;</strong></div>
         <table class="auto-style1">
             <tr>
-                <td rowspan="5">
-                    <asp:HyperLink ID="HyperLink1" runat="server">Mobile</asp:HyperLink>
-                    <br />
-                    <asp:HyperLink ID="HyperLink2" runat="server">Camera</asp:HyperLink>
-                    <br />
-                    <asp:HyperLink ID="HyperLink3" runat="server">Laptop</asp:HyperLink>
-                    <br />
-                    <asp:HyperLink ID="HyperLink4" runat="server">Smart watch</asp:HyperLink>
-                </td>
                 <td class="auto-style2">
                     &nbsp;</td>
                 <td class="auto-style2"></td>

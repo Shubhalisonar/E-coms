@@ -32,8 +32,7 @@
             <table class="auto-style1">
                 <tr>
                     <td colspan="3">
-                        <uc1:Menu ID="Menu1" runat="server" />
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>User Sign Up</td>
@@ -121,8 +120,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <uc2:Footer ID="Footer1" runat="server" />
-                    </td>
+                        &nbsp;</td>
                 </tr>
             </table>
         </div>
