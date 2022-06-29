@@ -83,8 +83,24 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="WebUserControl1.ascx" />
+    <Content Include="PartialCachingDemo.ascx" />
+    <Content Include="UserPartionCachigDemo.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PartialCachingDemo.ascx.cs">
+      <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartialCachingDemo.ascx.designer.cs">
+      <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPartionCachigDemo.ascx.cs">
+      <DependentUpon>UserPartionCachigDemo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPartionCachigDemo.ascx.designer.cs">
+      <DependentUpon>UserPartionCachigDemo.ascx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\CountedButton.cs" />
     <Content Include="App_Code\Users.cs" />
     <Content Include="App_Code\UserDeL.cs" />

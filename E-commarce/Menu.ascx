@@ -7,4 +7,7 @@
     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/List by category.aspx">List by catagory</asp:HyperLink>
 &nbsp;&nbsp; |&nbsp;
     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ViewCart.aspx">View cart</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;
+    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
 </p>
+

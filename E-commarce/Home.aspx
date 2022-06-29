@@ -21,23 +21,25 @@
         </div>
         <table class="auto-style1">
             <tr>
+                
                 <td class="auto-style2">
                     <asp:Image ID="Image2" runat="server" Height="384px" ImageUrl="~/NewFolder1/Mobile-Phone-PNG-HD.png" />
                 </td>
                 <td class="auto-style2"></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
                 <td>
                     <asp:Label ID="lblvcount" runat="server" Text="lblvcount"></asp:Label>
                 </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                
                 <td>&nbsp;</td>
             </tr>
             <tr>
