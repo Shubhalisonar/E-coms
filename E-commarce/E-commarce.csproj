@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\CategoryCRUD.aspx" />
+    <Content Include="Admin\ProductCRUD.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
@@ -87,6 +89,25 @@
     <Content Include="UserPartionCachigDemo.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\CategoryCRUD.aspx.cs">
+      <DependentUpon>CategoryCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryCRUD.aspx.designer.cs">
+      <DependentUpon>CategoryCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DAL\CategoryDAL.cs" />
+    <Compile Include="Admin\DAL\ProductDAL.cs" />
+    <Compile Include="Admin\Modals\Category.cs" />
+    <Compile Include="Admin\Modals\Product.cs" />
+    <Compile Include="Admin\ProductCRUD.aspx.cs">
+      <DependentUpon>ProductCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProductCRUD.aspx.designer.cs">
+      <DependentUpon>ProductCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\DbConnectionstr.cs" />
     <Compile Include="PartialCachingDemo.ascx.cs">
       <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -101,9 +122,9 @@
     <Compile Include="UserPartionCachigDemo.ascx.designer.cs">
       <DependentUpon>UserPartionCachigDemo.ascx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\CountedButton.cs" />
-    <Content Include="App_Code\Users.cs" />
-    <Content Include="App_Code\UserDeL.cs" />
+    <Compile Include="App_Code\CountedButton.cs" />
+    <Compile Include="App_Code\Users.cs" />
+    <Compile Include="App_Code\UserDeL.cs" />
     <Compile Include="CheckBoxList1.cs" />
     <Compile Include="Comman.Master.cs">
       <DependentUpon>Comman.Master</DependentUpon>
@@ -197,7 +218,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Customer\" />
+    <Folder Include="NewFolder2\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
