@@ -13,5 +13,15 @@ namespace E_commarce.Admin
         {
 
         }
+
+        protected void btsearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btsave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

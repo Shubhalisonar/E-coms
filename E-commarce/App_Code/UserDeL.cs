@@ -47,25 +47,25 @@ namespace E_Comm.App_Code
 
             }
 
-            public Users Login(Users user)
-            {
-                Users users = new Users();
-                string str = "select * from Users where Email=@email";
-                cmd = new SqlCommand(str, con);
-                cmd.Parameters.AddWithValue("@email", user.Email);
-                con.Open();
-                dr = cmd.ExecuteReader();
+        public Users Login(Users user)
+        {
+            Users users = new Users();
+            string str = "select * from Users where Email=@email";
+            cmd = new SqlCommand(str, con);
+            cmd.Parameters.AddWithValue("@email", user.Email);
+            con.Open();
+            dr = cmd.ExecuteReader();
 
-                if (dr.HasRows)
+            if (dr.HasRows)
+            {
+                while (dr.Read())
                 {
-                    while (dr.Read())
-                    {
-                        users.FirstName = dr["FirstName"].ToString();
-                        users.UserName = dr["UserName"].ToString();
-                        users.Email = dr["Email"].ToString();
-                    }
+                    users.FirstName = dr["FirstName"].ToString();
+                    users.UserName = dr["UserName"].ToString();
+                    users.Email = dr["Email"].ToString();
                 }
-                return users;
             }
+            return users;
         }
+    }
 }

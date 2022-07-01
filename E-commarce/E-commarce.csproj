@@ -220,7 +220,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Customer\" />
-    <Folder Include="NewFolder2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

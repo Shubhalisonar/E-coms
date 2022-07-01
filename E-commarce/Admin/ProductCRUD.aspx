@@ -9,55 +9,63 @@
         .auto-style1 {
             width: 100%;
         }
+        .auto-style2 {
+            width: 319px;
+        }
+        .auto-style3 {
+            width: 279px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td>Product Id</td>
-                <td>
+                <td class="auto-style3">Product Id</td>
+                <td class="auto-style2">
                     <asp:TextBox ID="txtproductid" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="bntsearch" runat="server" Text="Search By Id" />
+                    <asp:Button ID="bntsearch" runat="server" Text="Search By Id" OnClick="bntsearch_Click" />
                 </td>
             </tr>
             <tr>
-                <td>Name</td>
-                <td>
+                <td class="auto-style3">Name</td>
+                <td class="auto-style2">
                     <asp:TextBox ID="txtproductname" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>Price</td>
-                <td>
+                <td class="auto-style3">Price</td>
+                <td class="auto-style2">
                     <asp:TextBox ID="txtproductprice" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>Slect Category</td>
-                <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryId" Height="16px" Width="129px">
+                <td class="auto-style3">Slect Category</td>
+                <td class="auto-style2">
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryId" Height="16px" Width="129px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:softtechConnectionString %>" SelectCommand="SELECT * FROM [Category]"></asp:SqlDataSource>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>
-                    <asp:Button ID="bntsave" runat="server" Text="Save" />
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:Button ID="bntsave" runat="server" Text="Save" OnClick="bntsave_Click" />
 &nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="bntupdate" runat="server" Text="Update" />
+                    <asp:Button ID="bntupdate" runat="server" Text="Update" OnClick="bntupdate_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style2">
+                    <asp:Label ID="lblMsg" runat="server" Text="lblMsg"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>

@@ -22,7 +22,7 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtcategoryid" runat="server"></asp:TextBox>
-                    <asp:Button ID="btsearch" runat="server" Text="Search by Id" />
+                    <asp:Button ID="btsearch" runat="server" Text="Search by Id" OnClick="btsearch_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -40,7 +40,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="btsave" runat="server" Text="Save" />
+                    <asp:Button ID="btsave" runat="server" Text="Save" OnClick="btsave_Click" />
                 </td>
                 <td>
                     <asp:Label ID="lblMsg" runat="server" Text="lblMsg"></asp:Label>

@@ -7,13 +7,13 @@ namespace E_commarce.Admin.Modals
 {
     public class Product
     {
-        public int ProductId { get; set; }
+        public int Id { get; set; }
 
-        public string NAme { get; set; }
+        public string Name { get; set; }
 
-        public string Price { get; set; }
+        public double Price { get; set; }
 
-        public string CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
 
     }
