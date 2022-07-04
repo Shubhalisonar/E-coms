@@ -68,19 +68,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\CategoryCRUD.aspx" />
+    <Content Include="Admin\ManageRoles.aspx" />
     <Content Include="Admin\ProductCRUD.aspx" />
     <Content Include="Footer.ascx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
-    <Content Include="List by category.aspx" />
+    <Content Include="Customers\List by category.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Menu.ascx" />
     <Content Include="Multiviewdemo.aspx" />
     <Content Include="NewFolder1\logo.png" />
     <Content Include="NewFolder1\Mobile-Phone-PNG-HD.png" />
     <Content Include="ReadQueryString.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Registration.aspx" />
-    <Content Include="ViewCart.aspx" />
+    <Content Include="Customers\ViewCart.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -98,6 +100,13 @@
     </Compile>
     <Compile Include="Admin\DAL\CategoryDAL.cs" />
     <Compile Include="Admin\DAL\ProductDAL.cs" />
+    <Compile Include="Admin\ManageRoles.aspx.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageRoles.aspx.designer.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Modals\Category.cs" />
     <Compile Include="Admin\Modals\Product.cs" />
     <Compile Include="Admin\ProductCRUD.aspx.cs">
@@ -108,12 +117,26 @@
       <DependentUpon>ProductCRUD.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\DbConnectionstr.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PartialCachingDemo.ascx.cs">
       <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PartialCachingDemo.ascx.designer.cs">
       <DependentUpon>PartialCachingDemo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserPartionCachigDemo.ascx.cs">
       <DependentUpon>UserPartionCachigDemo.ascx</DependentUpon>
@@ -150,19 +173,12 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="List by category.aspx.cs">
+    <Compile Include="Customers\List by category.aspx.cs">
       <DependentUpon>List by category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="List by category.aspx.designer.cs">
+    <Compile Include="Customers\List by category.aspx.designer.cs">
       <DependentUpon>List by category.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Menu.ascx.cs">
       <DependentUpon>Menu.ascx</DependentUpon>
@@ -193,11 +209,11 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewCart.aspx.cs">
+    <Compile Include="Customers\ViewCart.aspx.cs">
       <DependentUpon>ViewCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewCart.aspx.designer.cs">
+    <Compile Include="Customers\ViewCart.aspx.designer.cs">
       <DependentUpon>ViewCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUserControl1.ascx.cs">
@@ -210,6 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Comman.Master" />
+    <Content Include="Admin\Web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -218,9 +235,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Customer\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

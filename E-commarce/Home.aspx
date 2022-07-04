@@ -47,5 +47,5 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-        <cc:CountedButton ID="cb1" runat="server" />
+       
 </asp:Content>
