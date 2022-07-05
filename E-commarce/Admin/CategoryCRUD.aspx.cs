@@ -19,39 +19,34 @@ namespace E_commarce.Admin
 
         protected void btsearch_Click(object sender, EventArgs e)
         {
-        //    Category cat = new Category();
-        //   cat = db.GetcategoryById(Convert.ToInt32(txtcategoryid.Text));
-        //    if (cat != null)
-        //    {
-        //        txtcategoryname.Text = cat.CategoryName;
-                
-                
-        //    }
-        //    else
-        //    {
-        //        lblMsg.Text = "Record not found";
-        //        lblMsg.ForeColor = Color.Red;
-        //    }
+            Category cat = new Category();
+            cat =categorydb.GetcategoryById(Convert.ToInt32(txtcategoryid.Text));
+            if (cat != null)
+            {
+                txtcategoryname.Text = cat.CategoryName;
+            }
+            else
+            {
+                lblMsg.Text = "Record not found";
+                lblMsg.ForeColor = Color.Red;
+            }
         }
 
         protected void btsave_Click(object sender, EventArgs e)
         {
-            //Category cat = new Category();
-            //cat.CategoryName = txtcategoryname.Text;
-          
-            //int res = CategoryDAL.AddCategory(cat);
-            //if (res == 1)
-            //{
-            //    lblMsg.Text = "Record inserted successfully";
-            //    lblMsg.ForeColor = Color.Green;
-            //    txtcategoryid.Text = String.Empty;
-            //    txtcategoryname.Text = string.Empty;
-               
-              
-            //}
-            //else
-            //    lblMsg.Text = "Something went wrong";
-            //lblMsg.ForeColor = Color.Red;
+            Category cat = new Category();
+            cat.CategoryName = txtcategoryname.Text;
+            int res = CategoryDAL.ADDCategory(cat);
+            if (res == 1)
+            {
+                lblMsg.Text = "Record inserted successfully";
+                lblMsg.ForeColor = Color.Green;
+                txtcategoryid.Text = String.Empty;
+                txtcategoryname.Text = string.Empty;
+            }
+            else
+                lblMsg.Text = "Something went wrong";
+                lblMsg.ForeColor = Color.Red;
         }
     }
 }

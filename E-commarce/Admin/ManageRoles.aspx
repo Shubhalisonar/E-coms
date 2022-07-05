@@ -27,10 +27,10 @@
                 <tr>
                     <td class="auto-style3">Enter Role</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="194px"></asp:TextBox>
+                        <asp:TextBox ID="txtrole" runat="server" Width="194px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="bntaddrole" runat="server" Text="Add Role" />
+                        <asp:Button ID="bntaddrole" runat="server" Text="Add Role" OnClick="bntaddrole_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -40,7 +40,7 @@
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:Button ID="bntaddusertorole" runat="server" CssClass="auto-style2" Text="Add User To Role" />
+                        <asp:Button ID="bntaddusertorole" runat="server" CssClass="auto-style2" Text="Add User To Role" OnClick="bntaddusertorole_Click" />
                     </td>
                 </tr>
                 <tr>

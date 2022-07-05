@@ -91,6 +91,7 @@ namespace E_commarce
                     list.Add(item.Text);
                 }
                 Session["plist"] = list;
+                //profile
                 Response.Redirect("~/ViewCart.aspx");
             }
         }
