@@ -6,27 +6,23 @@
         <div>
             <asp:Image ID="Image1" runat="server" Height="84px" ImageUrl="~/NewFolder1/logo.png" Width="522px" />
             <br />
-            <br />
-            <strong>
-&nbsp;</strong></div>
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style2">
-                    &nbsp;</td>
-                <td class="auto-style2"></td>
-            </tr>
-            <tr>
-                <td>
+            <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server">
+            </asp:ScriptManagerProxy>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
                     <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged">
                     </asp:DropDownList>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>
+                    <br />
                     <asp:CheckBoxList ID="CheckBoxList1" runat="server">
                     </asp:CheckBoxList>
-                </td>
+                    <br />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+            </div>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
